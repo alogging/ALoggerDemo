@@ -2,4 +2,13 @@ package org.ijiangtao.tech.alogging.alogger.dao.product;
 
 public class ProductDao {
 
+    //saveProduct
+    //saveSku
+
+    //findProductByCode
+    //findSkuByCode
+
+    //updateSku
+    //updateProduct
+
 }
