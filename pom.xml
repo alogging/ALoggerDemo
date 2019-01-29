@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.ijiangtao.tech.alogging</groupId>
+	<artifactId>aloggerdemo</artifactId>
+	<version>1.1.01.01-SNAPSHOT</version>
+
+	<packaging>war</packaging>
+
+	<properties>
+
+		<maven-compiler-plugin.source>1.8</maven-compiler-plugin.source>
+		<maven-compiler-plugin.target>1.8</maven-compiler-plugin.target>
+		<maven-compiler-plugin.encoding>UTF-8</maven-compiler-plugin.encoding>
+		<maven-compiler-plugin.version>3.5.1</maven-compiler-plugin.version>
+
+		<!-- jetty-maven-plugin -->
+		<version.jetty-maven-plugin>9.3.3.v20150827</version.jetty-maven-plugin>
+		<jettyPlugin.port>8150</jettyPlugin.port>
+		<jettyPlugin.stopPort>9812</jettyPlugin.stopPort>
+
+		<!-- springmvc swagger -->
+		<version.swagger.springmvc>1.0.2</version.swagger.springmvc>
+
+		<spring.version>4.3.22.RELEASE</spring.version>
+
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>org.ijiangtao.tech.alogging</groupId>
+			<artifactId>alogger</artifactId>
+			<version>1.1.01.01-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<!-- swagger -->
+		<dependency>
+			<groupId>com.mangofactory</groupId>
+			<artifactId>swagger-springmvc</artifactId>
+			<version>${version.swagger.springmvc}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>2.6.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.6.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.6.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.1.23</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>1.9.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.25</version>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.12</version>
+		</dependency>
+
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+
+			<!-- jetty-maven-plugin -->
+			<plugin>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<version>${version.jetty-maven-plugin}</version>
+				<configuration>
+					<httpConnector>
+						<port>${jettyPlugin.port}</port>
+					</httpConnector>
+					<stopKey>shutdown</stopKey>
+					<stopPort>${jettyPlugin.stopPort}</stopPort>
+					<scanIntervalSeconds>2</scanIntervalSeconds>
+					<!-- <reload>manual</reload> -->
+					<dumpOnStart>true</dumpOnStart>
+					<webApp>
+						<contextPath>/</contextPath>
+						<defaultsDescriptor>jettyCustom.xml</defaultsDescriptor>
+						<!-- <resourceBases> <resourceBase>${project.basedir}/src/main/webapp</resourceBase> <resourceBase>${project.basedir}/commons</resourceBase> </resourceBases> -->
+					</webApp>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<inherited>true</inherited>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin.version}</version>
+				<configuration>
+					<source>${maven-compiler-plugin.source}</source>
+					<target>${maven-compiler-plugin.target}</target>
+					<encoding>${maven-compiler-plugin.encoding}</encoding>
+					<detail>true</detail>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+
+</project>
