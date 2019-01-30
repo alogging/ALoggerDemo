@@ -16,6 +16,8 @@
             http://www.springframework.org/schema/cache
 			http://www.springframework.org/schema/cache/spring-cache.xsd">
 
+	<aop:aspectj-autoproxy />
+    <context:annotation-config />
 	<context:component-scan base-package="org.ijiangtao.tech.alogging.alogger" />
 
 	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
@@ -26,5 +28,6 @@
 		</property>
 	</bean>
 
-		
+    <import resource="classpath:spring-mybatis.xml" />
+    	
 </beans>
