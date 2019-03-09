@@ -18,7 +18,7 @@
 
 	<aop:aspectj-autoproxy />
     <context:annotation-config />
-	<context:component-scan base-package="org.ijiangtao.tech.alogging.alogger" />
+	<context:component-scan base-package="net.ijiangtao.tech.alogging.alogger" />
 
 	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 		<property name="locations">

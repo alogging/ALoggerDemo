@@ -1,6 +1,6 @@
-package org.ijiangtao.tech.alogging.alogger.manager.product;
+package net.ijiangtao.tech.alogging.alogger.manager.product;
 
-import org.ijiangtao.tech.alogging.alogger.model.product.PriceSynchronizationData;
+import net.ijiangtao.tech.alogging.alogger.model.product.PriceSynchronizationData;
 
 public class PriceSynchronizationManager {
 

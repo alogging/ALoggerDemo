@@ -13,14 +13,14 @@
 	<!-- 设置能访问静态资源 -->
 	<mvc:default-servlet-handler />
 	<!--扫描controller -->
-	<context:component-scan base-package="org.ijiangtao.tech.alogging.alogger.web.controller" />
+	<context:component-scan base-package="net.ijiangtao.tech.alogging.alogger.web.controller" />
 
 	<!-- Swagger -->
 	<mvc:resources mapping="/swagger/**" location="/swagger/" />
 	<!-- 将SpringSwaggerConfig加载到 spring容器 -->
 	<bean class="com.mangofactory.swagger.configuration.SpringSwaggerConfig" />
 	<!-- 将自定义 SwaggerConfig加载到 spring容器 -->
-	<bean class="org.ijiangtao.tech.alogging.alogger.config.swagger.SwaggerConfig" />
+	<bean class="net.ijiangtao.tech.alogging.alogger.config.swagger.SwaggerConfig" />
 
 	<!-- jsp page related... start -->
 	<bean id="viewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">

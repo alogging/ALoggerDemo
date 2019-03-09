@@ -1,4 +1,4 @@
-package org.ijiangtao.tech.alogging.alogger.web.controller.user;
+package net.ijiangtao.tech.alogging.alogger.web.controller.user;
 
 import org.springframework.web.bind.annotation.RestController;
 

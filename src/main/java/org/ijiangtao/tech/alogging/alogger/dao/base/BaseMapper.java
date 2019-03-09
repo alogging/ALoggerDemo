@@ -1,4 +1,4 @@
-package org.ijiangtao.tech.alogging.alogger.dao.base;
+package net.ijiangtao.tech.alogging.alogger.dao.base;
 
 import java.util.List;
 

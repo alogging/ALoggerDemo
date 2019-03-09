@@ -37,7 +37,7 @@
 	</bean>
 
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="org.ijiangtao.tech.alogging.alogger.dao.*" />
+		<property name="basePackage" value="net.ijiangtao.tech.alogging.alogger.dao.*" />
 	</bean>
 
 	<!-- transaction config related... start -->

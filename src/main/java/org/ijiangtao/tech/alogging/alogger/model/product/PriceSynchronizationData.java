@@ -1,4 +1,4 @@
-package org.ijiangtao.tech.alogging.alogger.model.product;
+package net.ijiangtao.tech.alogging.alogger.model.product;
 
 import java.math.BigDecimal;
 

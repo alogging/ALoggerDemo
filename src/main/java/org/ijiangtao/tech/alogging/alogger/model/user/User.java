@@ -1,4 +1,4 @@
-package org.ijiangtao.tech.alogging.alogger.model.user;
+package net.ijiangtao.tech.alogging.alogger.model.user;
 
 import java.io.Serializable;
 

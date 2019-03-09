@@ -5,4 +5,4 @@
  * @author LSH7968
  *
  */
-package org.ijiangtao.tech.alogging.alogger.alogger;
+package net.ijiangtao.tech.alogging.alogger.alogger;

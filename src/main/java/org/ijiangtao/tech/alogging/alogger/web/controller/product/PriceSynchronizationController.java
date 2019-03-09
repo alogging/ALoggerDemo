@@ -1,4 +1,4 @@
-package org.ijiangtao.tech.alogging.alogger.web.controller.product;
+package net.ijiangtao.tech.alogging.alogger.web.controller.product;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;

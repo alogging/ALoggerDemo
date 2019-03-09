@@ -1,8 +1,8 @@
-package org.ijiangtao.tech.alogging.alogger.manager.user;
+package net.ijiangtao.tech.alogging.alogger.manager.user;
 
 import java.util.List;
 
-import org.ijiangtao.tech.alogging.alogger.model.user.User;
+import net.ijiangtao.tech.alogging.alogger.model.user.User;
 
 /**
  * 

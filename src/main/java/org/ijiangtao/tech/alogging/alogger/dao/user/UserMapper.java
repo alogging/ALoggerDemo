@@ -1,10 +1,10 @@
-package org.ijiangtao.tech.alogging.alogger.dao.user;
+package net.ijiangtao.tech.alogging.alogger.dao.user;
 
 import java.util.List;
 
 import org.apache.ibatis.annotations.Param;
-import org.ijiangtao.tech.alogging.alogger.dao.base.BaseMapper;
-import org.ijiangtao.tech.alogging.alogger.model.user.User;
+import net.ijiangtao.tech.alogging.alogger.dao.base.BaseMapper;
+import net.ijiangtao.tech.alogging.alogger.model.user.User;
 
 
 /**

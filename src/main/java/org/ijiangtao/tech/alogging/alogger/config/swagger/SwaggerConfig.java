@@ -1,4 +1,4 @@
-package org.ijiangtao.tech.alogging.alogger.config.swagger;
+package net.ijiangtao.tech.alogging.alogger.config.swagger;
 
 
 import org.springframework.beans.factory.annotation.Autowired;

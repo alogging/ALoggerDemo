@@ -1,9 +1,9 @@
-package org.ijiangtao.tech.alogging.alogger.manager.user;
+package net.ijiangtao.tech.alogging.alogger.manager.user;
 
 import java.util.List;
 
-import org.ijiangtao.tech.alogging.alogger.dao.user.UserMapper;
-import org.ijiangtao.tech.alogging.alogger.model.user.User;
+import net.ijiangtao.tech.alogging.alogger.dao.user.UserMapper;
+import net.ijiangtao.tech.alogging.alogger.model.user.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

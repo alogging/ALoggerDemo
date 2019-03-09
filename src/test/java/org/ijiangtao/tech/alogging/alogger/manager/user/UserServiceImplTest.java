@@ -1,6 +1,6 @@
-package org.ijiangtao.tech.alogging.alogger.manager.user;
+package net.ijiangtao.tech.alogging.alogger.manager.user;
 
-import org.ijiangtao.tech.alogging.alogger.model.user.User;
+import net.ijiangtao.tech.alogging.alogger.model.user.User;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
